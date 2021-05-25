@@ -40,8 +40,8 @@ export default {
 <style>
 .restaurant {
   background-image: url('~/static/img/restaurant.png');
-  width: 100vw;
-  height: 100vh;
+  width: 76.9vw;
+  height: 86vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
