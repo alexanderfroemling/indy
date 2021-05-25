@@ -43,11 +43,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background: #f4f4f4;
+  background: #2e2e30;
 }
 
-h1, h2, h3 {
+
+h1, h3 {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: left;
   margin-bottom: 20px;
 }
 

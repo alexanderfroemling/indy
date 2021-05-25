@@ -1,12 +1,24 @@
 <template>
-  
+  <div>
+      <h2>So können Sie uns erreichen</h2>
+      <p>
+      Indy Food AG <br>
+      Werner-Heisenberg-Allee 25 <br>
+      80939 München <br>
+      02567/132485 <br>
+      <br><br>
+      Bitte richten Sie Ihre Fragen oder Kommentare direkt an die Stelle, die der Natur 
+      Ihrer Anfrage für Sie am zutrefflichsten erscheint. Seien Sie sich sicher, dass Sie uns mit ausreichen Informationen versorgen,      damit wir Ihrer Anfrage zufriedenstellend bearbeiten können. Aufgrund der aktuellen Lage kann es 
+      bei der Bearbeitung zu Verzögerungen kommen, wir bitten dies zu entschuldigen. <br> <br>
+      <b><em>Ihr Indy Food</em></b></p>
+  </div>
 </template>
 
 <script>
 export default {
     head() {
         return {
-            title: "Contact Indy",
+            title: "Contact Indy Food",
             meta: [
                 {
                     hid: "description",

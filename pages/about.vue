@@ -13,7 +13,7 @@
 export default {
     head() {
         return {
-            title: "About Indy",
+            title: "About Indy Food",
             meta: [
                 {
                     hid: "description",

@@ -1,6 +1,7 @@
 <template>
  <div>
    <h3>Herzlich willkommen zu Ihrem kulinarischen Abenteuer!</h3>
+   <div class="background">Bild von einem Gericht</div>
   <!--<div class="bar">
    <h1>Indiana Jones Restaurant</h1>
     <div class="side-left"></div>
