@@ -1,7 +1,9 @@
 <template>
  <div>
-   <h3>Herzlich willkommen zu Ihrem kulinarischen Abenteuer!</h3>
-   <div class="background">Bild von einem Gericht</div>
+   <div class="restaurant">
+     <h3>Herzlich willkommen zu Ihrem kulinarischen Abenteuer!</h3>
+   </div>
+   <!--<img src="~/static/img/restaurant.png" class="background">-->
   <!--<div class="bar">
    <h1>Indiana Jones Restaurant</h1>
     <div class="side-left"></div>
@@ -36,6 +38,20 @@ export default {
 </script>
 
 <style>
+.restaurant {
+  background-image: url('~/static/img/restaurant.png');
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.restaurant h3 {
+  font-size: 50px;
+  color: antiquewhite;
+  text-align: center;
+}
 
 </style>

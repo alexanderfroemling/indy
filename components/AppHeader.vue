@@ -28,22 +28,35 @@ export default {
      align-items: center;
      margin-bottom: 1rem;
      padding-bottom: 1rem;
-     border-bottom: 1px dotted #ccc;
+     border-bottom: 1px solid #ccc;
  }
 
  .header .title {
-     font-size: 3rem;
-     color: #526488;
+     font-size: 55px;
+     color: white;
  }
 
- .header_ul {
+ .header ul {
      display: flex;
  }
 
- .header_a {
+ .header a {
      display: inline-block;
-     background: #fff;
-     padding: 0,3rem 1rem;
-     margin-right: 0,5rem;
+     margin: 5px 4px;
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     background-color: gray;
+     border: darkgray solid 2px;
+     padding: 2px 2px;
+     transition: opacity 200ms;
+     border-radius: 30%;
  }
+
+.header a:hover {
+  color: black;
+  background-color: rgb(0, 183, 255);
+  opacity: 90%;
+  border: white solid 2px;
+}
+
 </style>

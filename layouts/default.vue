@@ -2,7 +2,6 @@
   <div class="container">
     <AppHeader />
     <Nuxt />
-    <Spacing />
     
   </div>
 </template>
@@ -43,13 +42,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background: #2e2e30;
+  background: #414f74;
 }
 
 
-h1, h3 {
+h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 15px 0px;
 }
 
 h2 {
@@ -57,28 +56,24 @@ h2 {
   margin-bottom: 20px;
 }
 
-a {
-  color: #666;
-  text-decoration: none;
-}
 
 ul {
   list-style: none;
 }
 
+
+
 .container {
-  max-width: 800px;
+  max-width: 80%;
+  height: 100vh;
   margin: 2rem auto;
   overflow: hidden;
   padding: 1rem 2rem;
-  background: #fff;
+  background: rgb(19, 19, 19);
+  color: white;
+  border: white solid 1px;
 }
 
-.spacing {
-  height: 800px;
-  width: 80%;
-  background: transparent;
-}
 
 /**,
 *::before,
