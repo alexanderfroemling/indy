@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <Menu />
+  <div class="container">
+    <AppHeader />
     <Nuxt />
+    <Spacing />
     
   </div>
 </template>
@@ -32,7 +33,48 @@ html {
   box-sizing: border-box;
 }
 
-*,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: #f4f4f4;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  background: #fff;
+}
+
+.spacing {
+  height: 800px;
+  width: 80%;
+  background: transparent;
+}
+
+/**,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -66,5 +108,5 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
-}
+}*/
 </style>

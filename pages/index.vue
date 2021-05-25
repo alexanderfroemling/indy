@@ -1,6 +1,7 @@
 <template>
  <div>
-  <div class="bar">
+   <h3>Herzlich willkommen zu Ihrem kulinarischen Abenteuer!</h3>
+  <!--<div class="bar">
    <h1>Indiana Jones Restaurant</h1>
     <div class="side-left"></div>
     <nav>
@@ -12,12 +13,25 @@
       </ul>
     </nav>
     <div class="side-right"></div>
-  </div>
- </div>  
+  </div>-->
+ </div>
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+        return {
+            title: "Indy Food",
+            meta: [
+                {
+                    hid: "description",
+                    name: "home",
+                    content: "Abenteuer von der kulinarischen Seite",
+                }
+            ]
+        }
+    }
+}
 </script>
 
 <style>
