@@ -52,6 +52,7 @@ export default {
 .restaurant h3 {
   font-size: 50px;
   color: rgba(250, 235, 215, 0.89);
+  text-shadow: 0 0 4px black, 0 0 4px black;
   text-align: center;
   justify-content: flex-start;
   border-radius: 25%;

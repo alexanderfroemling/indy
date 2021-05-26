@@ -45,9 +45,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background: #414f74;
+ background-color: #010011;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #010011 40px ), repeating-linear-gradient( #92612f55, #92612f );
 }
-
 
 h1 {
   text-align: center;

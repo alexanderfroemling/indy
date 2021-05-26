@@ -12,9 +12,9 @@
              </div>
          </div>
          <div class="eintrag">
-             <div class="jahr"><strong>2015 - 2016</strong></div><div class="ereignis">Für seine Restaurants ill Indy nur die besten 
-                 Materialien verwenden und so machte er sich mit einem alten Freund, der ihm noch einen Gefallen schuldete auf den Weg 
-                 an einen weit entfernten Ort. Bei seiner Heimkehr, hatte er alle zu benötigenden Ressourcen dabei.</div>
+             <div class="jahr"><strong>2015 - 2016</strong></div><div class="ereignis">Für seine Restaurants wollte Indy nur die besten 
+                 Materialien verwenden und so machte er sich mit einem alten Freund, der ihm noch einen Gefallen schuldete, auf den Weg 
+                 zu einen weit entfernten Ort. Bei seiner Heimkehr, hatte er dann alle zu benötigenden Ressourcen dabei.</div>
          </div>
          <div class="eintrag">
              <div class="jahr"><strong>2017 - 2019</strong></div><div class="ereignis">Der Rest war eine Leichtigkeit für Indy. Er 
@@ -53,7 +53,7 @@ export default {
     min-height: 1000px;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin: 3vh 1vw;
+    margin: 2vh 1vw;
 }
 
 .eintrag {

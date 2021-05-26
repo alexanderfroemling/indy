@@ -46,9 +46,9 @@ export default {
      margin: 5px 4px;
      color: rgb(255, 255, 255);
      text-decoration: none;
-     background-color: gray;
-     border: darkgray solid 2px;
-     padding: 2px 4px;
+     background-color: rgb(70, 70, 70);
+     border: darkgray solid 3px;
+     padding: 2px 5px;
      transition: opacity 200ms;
      border-radius: 20px;
  }
@@ -57,7 +57,7 @@ export default {
   color: black;
   background-color: rgb(0, 183, 255);
   opacity: 90%;
-  border: white solid 2px;
+  border: white solid 3px;
 }
 
 </style>

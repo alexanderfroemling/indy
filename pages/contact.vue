@@ -5,6 +5,7 @@
       Indy Food AG <br>
       Werner-Heisenberg-Allee 25 <br>
       80939 München <br>
+      indy@food.com <br>
       02567/132485 <br>
       </p><img src="~/static/img/indy.jpg" alt=""></div><br><br>
       <p>

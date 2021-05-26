@@ -129,7 +129,7 @@ input {
   color: black;
   background-color: rgb(0, 183, 255);
   opacity: 90%;
-  border: white solid 2px;
+  border: white solid 3px;
 }
 
 .guest {
