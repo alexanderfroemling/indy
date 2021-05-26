@@ -4,7 +4,13 @@
       <input class="inputname" type="text" placeholder="Name" v-model="user.name">
       <input class="inputmessage" type="text" placeholder="Wie hat es Ihnen gefallen?" v-model="user.message">
       <button class="btn" @click="submit">Verewigen</button>
-      <!--<p>{{ user.name }}</p> <p>{{ user.message }}</p>-->
+      <ul class="gbook">
+        <li v-for="user in list" :key="user.name">
+            {{ user.name + ':' + ' ' + '"' + user.message + '"' }}<br><br><br>
+        </li>
+        
+        </ul>
+      
   </div>
 </template>
 
@@ -49,6 +55,16 @@ export default {
 </script>
 
 <style>
+
+
+.gbook {
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    margin: 120px 10px;
+    border: 4px solid black;
+    border-radius: 20px;
+    padding: 15px;
+}
 
 .inputname {
     height: 2vh;
