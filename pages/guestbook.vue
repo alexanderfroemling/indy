@@ -1,8 +1,8 @@
 <template>
   <div class="guest">
       <h4>Gästebuch</h4>
-      <input class="inputname" type="text" placeholder="Name" v-model="name">
-      <input class="inputmessage" type="text" placeholder="Wie hat es Ihnen gefallen?" v-model="message">
+      <input class="inputname" type="text" placeholder="Name" v-model="user.name">
+      <input class="inputmessage" type="text" placeholder="Wie hat es Ihnen gefallen?" v-model="user.message">
       <button class="btn" @click="submit">Verewigen</button>
       <!--<p>{{ user.name }}</p> <p>{{ user.message }}</p>-->
   </div>
@@ -21,23 +21,30 @@ export default {
                  }
             ]
         }
-     }
-}
+     },
+     data() {
+        return {
+            user: {
+                name: '',
+                message: '',
 
-/*new Vue({
-    el:'.guest'
-    data: {
-        user: {
-            name: '',
-            message: '',
-        },
+            },
+            list: []
+            
+        }
     },
     methods: {
         submit: function() {
-           /*name und message werden in daten gespeichert/ 
+           console.log(this.user)
+           this.list.push({...this.user})
+           console.log(this.list)
         }
     },
-})*/
+}
+
+
+    
+
 
 </script>
 
