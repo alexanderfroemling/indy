@@ -6,6 +6,7 @@
           <li>
               <nuxt-link to='/'>HOME</nuxt-link>
               <nuxt-link to='/menu'>MENU</nuxt-link>
+              <nuxt-link to='/guestbook'>GÄSTEBUCH</nuxt-link>
               <nuxt-link to='/about'>ABOUT</nuxt-link>
               <nuxt-link to='/contact'>KONTAKT</nuxt-link>
           </li>

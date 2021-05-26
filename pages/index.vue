@@ -40,18 +40,21 @@ export default {
 <style>
 .restaurant {
   background-image: url('~/static/img/restaurant.png');
-  width: 76.9vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
   height: 86vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .restaurant h3 {
   font-size: 50px;
-  color: antiquewhite;
+  color: rgba(250, 235, 215, 0.89);
   text-align: center;
+  justify-content: flex-start;
+  border-radius: 25%;
 }
 
 </style>
