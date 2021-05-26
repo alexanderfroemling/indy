@@ -8,8 +8,8 @@
         <li v-for="user in list" :key="user.name">
             {{ user.name + ':' + ' ' + '"' + user.message + '"' }}<br><br><br>
         </li>
-        
         </ul>
+
       
   </div>
 </template>
@@ -35,8 +35,22 @@ export default {
                 message: '',
 
             },
-            list: []
+            list: [],
             
+            
+        }
+    },
+    mounted() {
+        if (localStorage.list) {
+            this.list = JSON.parse(localStorage.list);
+        }
+    },
+    watch: {
+        list: {
+            handler(newList) {
+            localStorage.list = JSON.stringify(newList);
+            },
+            deep: true
         }
     },
     methods: {
@@ -102,8 +116,8 @@ input {
 }
 
 .btn {
-    background: blue;
-    border: 2px solid white;
+    background: transparent;
+    border: 3px solid white;
     padding: 10px 20px;
     margin: 20px 0px;
     color: white;

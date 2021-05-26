@@ -66,7 +66,6 @@ export default {
     flex: 1;
     justify-items: center;
     align-items: center;
-    padding-left: 30px;
 }
 
 .ereignis {
@@ -83,6 +82,6 @@ strong {
     border-radius: 20px;
     padding: 10px;
     font-size: 20px;
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(48, 48, 48);
 }
 </style>
