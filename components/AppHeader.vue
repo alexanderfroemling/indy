@@ -48,9 +48,9 @@ export default {
      text-decoration: none;
      background-color: gray;
      border: darkgray solid 2px;
-     padding: 2px 2px;
+     padding: 2px 4px;
      transition: opacity 200ms;
-     border-radius: 30%;
+     border-radius: 20px;
  }
 
 .header a:hover {
