@@ -7,8 +7,11 @@
 </template>
 <script>
 import Menu from '~/components/Menu.vue'
+import AppHeader from '~/components/AppHeader.vue'
 export default {  
-  components: {Menu}
+  components: {
+    Menu,AppHeader
+  }
 }
 </script>
 

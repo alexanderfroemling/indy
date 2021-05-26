@@ -2,8 +2,9 @@
   <div class="guest">
       <h4>Gästebuch</h4>
       <input class="inputname" type="text" placeholder="Name" v-model="name">
-      <input class="inputmessage" type="text" placeholder="Wie hat es Ihnen gefallen?" v-model="name">
+      <input class="inputmessage" type="text" placeholder="Wie hat es Ihnen gefallen?" v-model="message">
       <button class="btn" @click="submit">Verewigen</button>
+      <!--<p>{{ user.name }}</p> <p>{{ user.message }}</p>-->
   </div>
 </template>
 
@@ -20,9 +21,24 @@ export default {
                  }
             ]
         }
-    }
-
+     }
 }
+
+/*new Vue({
+    el:'.guest'
+    data: {
+        user: {
+            name: '',
+            message: '',
+        },
+    },
+    methods: {
+        submit: function() {
+           /*name und message werden in daten gespeichert/ 
+        }
+    },
+})*/
+
 </script>
 
 <style>
@@ -39,7 +55,6 @@ export default {
 }
 
 input {
-    -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
     color: -internal-light-dark(black, white);
     letter-spacing: normal;
@@ -60,7 +75,7 @@ input {
     border-style: inset;
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 .btn {
