@@ -8,7 +8,7 @@
         <li v-for="user in list" :key="user.name">
             {{ user.name + ':' + ' ' + '"' + user.message + '"' }}<br><br><br>
         </li>
-        </ul>
+      </ul>
 
       
   </div>
@@ -55,9 +55,7 @@ export default {
     },
     methods: {
         submit: function() {
-           console.log(this.user)
            this.list.push({...this.user})
-           console.log(this.list)
         }
     },
 }

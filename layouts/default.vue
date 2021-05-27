@@ -69,7 +69,7 @@ ul {
 
 .container {
   max-width: 80%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 2rem auto;
   overflow: hidden;
   padding: 1rem 2rem;
