@@ -3,7 +3,7 @@
     <section class="products">
         <div v-for="product in products" :key="product.id" class="product">
             <h3 class="product__header">{{ product.name }}</h3>
-            <img v-for="product in products" 
+            <img 
             :key="product.img" 
             :src="product.img" class="product__image"
             >
