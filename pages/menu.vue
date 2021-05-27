@@ -3,10 +3,9 @@
     <section class="products">
         <div v-for="product in products" :key="product.id" class="product">
             <h3 class="product__header">{{ product.name }}</h3>
-            <img
-            src="https://via.placeholder.com/150"
-            :alt="product.name"
-            class="product__image"
+            <img v-for="product in products" 
+            :key="product.img" 
+            :src="product.img" class="product__image"
             >
             <p class="product__description">{{ product.description }}</p>
             <div class="cart">
@@ -51,18 +50,21 @@ export default {
                     name: 'Pizza',
                     description: 'Leckere Pizza mit Oliven und Tomaten',
                     quantity: 0,
+                    img: require("~/static/img/pizza.jpg"),
                 },
                 {
                     id: 2,
                     name: 'Curry Mix',
                     description: 'Currysorten aus aller Welt und dazu Linsen, Reis und leckere Dips',
                     quantity: 0,
+                    img: require("~/static/img/curry.jpg"),
                 },
                 {
                     id: 3,
                     name: 'Exotische Getreidepfanne',
                     description: 'Knusprig gebratenes Getreide mit Gemüse und Kräutern und Früchten',
                     quantity: 0,
+                    img: require("~/static/img/getreidepfanne.jpg"),
                 },
             ],
             showCart: false
@@ -149,7 +151,7 @@ export default {
     width: 2.5rem;
 }
   
-.quantity {
+.cart__quantity {
     font-size: 1.5rem;
     margin: 0 1rem;
 }
