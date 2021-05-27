@@ -12,7 +12,7 @@
         </li>
     </ul>
     <div class="header_cart">
-        <button @click="showCart = !showCart">
+        <button @click="showCart = !showCart" class="header__button">
         <i class="fas fa-shopping-cart"></i>
         </button>
         <span class="total-quantity">{{ totalQuantity }}</span>
@@ -82,7 +82,7 @@ export default {
     position: relative;
 }
 
-button {
+.header__button {
     background: none;
     border: 0;
     color: white;

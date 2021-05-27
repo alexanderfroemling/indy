@@ -138,7 +138,7 @@ export default {
   text-align: center;
 }
 
-button {
+.cart__button {
     background: lightblue;
     border: 0;
     color: white;
