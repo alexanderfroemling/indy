@@ -11,7 +11,7 @@
         <nuxt-link to='/contact'>KONTAKT</nuxt-link>
         </li>
     </ul>
-    <div class="header_cart">
+    <div class="header__cart">
         <button @click="showCart = !showCart" class="header__button">
         <i class="fas fa-shopping-cart"></i>
         </button>
@@ -78,7 +78,7 @@ export default {
   border: white solid 3px;
 }
 
-.headercart {
+.header__cart {
     position: relative;
 }
 
@@ -91,6 +91,9 @@ export default {
 
 i {
 font-size: 2rem;
+background-color: white;
+min-height: 30px;
+min-width: 30px;
 }
 
 .total-quantity {
