@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{264:function(n,t,e){"use strict";e.r(t);var c={name:"Spacing"},l=e(19),component=Object(l.a)(c,(function(){var n=this.$createElement;return(this._self._c||n)("div",{staticClass:"spacing"})}),[],!1,null,null,null);t.default=component.exports}}]);
