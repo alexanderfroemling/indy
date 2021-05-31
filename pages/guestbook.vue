@@ -16,6 +16,7 @@
 
 <script>
 export default {
+    name: "guestbook",
     head() {
         return {
             title: "Guestbook Indy Food",

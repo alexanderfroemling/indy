@@ -10,14 +10,13 @@
         <nuxt-link to='/about'>ABOUT</nuxt-link>
         <nuxt-link to='/contact'>KONTAKT</nuxt-link>
         </li>
-    </ul>
-    <div class="header__cart">
-        <button @click="showCart = !showCart" class="header__button">
-        <i class="fas fa-shopping-cart"></i>
+        <div class="header-cart">
+        <button @click="showCart = !showCart" class="header-button">
+        <h1>C</h1>
         </button>
         <span class="total-quantity">{{ totalQuantity }}</span>
         <div v-if="showCart" class="cart-dropdown">
-            <ul class="cart-dropdown__list">
+            <ul class="cart-dropdown-list">
                 <li
                 v-for="product in cart"
                 :key="product.id"
@@ -26,16 +25,22 @@
                 </li>
             </ul>
         </div>
-    </div> 
+    </div>
+    </ul>
+     
   </header>
  </div>
   
 </template>
 
 <script>
-
+import Menu from "/components/Menu";
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    components: {
+        Menu
+    }
+
 }
 
 </script>
@@ -78,11 +83,11 @@ export default {
   border: white solid 3px;
 }
 
-.header__cart {
+.header-cart {
     position: relative;
 }
 
-.header__button {
+.header-button {
     background: none;
     border: 0;
     color: white;
@@ -125,7 +130,7 @@ right: 0;
 width: 12rem;
 }
 
-.cart-dropdown__list {
+.cart-dropdown-list {
     list-style: none;
 } 
 

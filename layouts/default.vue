@@ -6,8 +6,8 @@
   </div>
 </template>
 <script>
-import Menu from '~/components/Menu.vue'
-import AppHeader from '~/components/AppHeader.vue'
+import Menu from '/components/Menu.vue'
+import AppHeader from '/components/AppHeader.vue'
 export default {  
   components: {
     Menu,AppHeader
