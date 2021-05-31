@@ -83,7 +83,5 @@ export default {
 
 
 <style scoped>
-.farbe {
-    background-color: green;
-}
+
 </style>
