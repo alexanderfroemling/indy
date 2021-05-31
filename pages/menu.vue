@@ -1,24 +1,25 @@
 <template>
   <div>
+
     <section class="products">
         <div v-for="product in products" :key="product.id" class="product">
-            <h3 class="product__header">{{ product.name }}</h3>
+            <h3 class="product-header">{{ product.name }}</h3>
             <img 
             :key="product.img" 
-            :src="product.img" class="product__image"
+            :src="product.img" class="product-image"
             >
-            <p class="product__description">{{ product.description }}</p>
+            <p class="product-description">{{ product.description }}</p>
             <div class="cart">
                 <button
                 @click="updateCart(product, 'subtract')"
-                class="cart__button"
+                class="cart-button"
                 >
                 -
                 </button>
-                <span class="cart__quantity">{{ product.quantity }}</span>
+                <span class="cart-quantity">{{ product.quantity }}</span>
                 <button
                 @click="updateCart(product, 'add')"
-                class="cart__button"
+                class="cart-button"
                 >
                 +
                 </button>
@@ -30,6 +31,7 @@
 
 <script>
 export default {
+    name: "menu",
     head() {
         return {
             title: "Menu Indy Food",
@@ -120,17 +122,17 @@ export default {
     padding: 1rem;
 }
 
-.product__header {
+.product-header {
       font-size: 2rem;
       text-align: center;
 }
 
-.product__image {
+.product-image {
         display: block;
         margin: 1rem auto;
 }
 
-.product__description {
+.product-description {
         font-size: 1.3rem;
         margin-top: 1rem;
 }
@@ -140,7 +142,7 @@ export default {
   text-align: center;
 }
 
-.cart__button {
+.cart-button {
     background: lightblue;
     border: 0;
     color: white;
@@ -151,7 +153,7 @@ export default {
     width: 2.5rem;
 }
   
-.cart__quantity {
+.cart-quantity {
     font-size: 1.5rem;
     margin: 0 1rem;
 }
