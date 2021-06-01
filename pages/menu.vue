@@ -97,21 +97,23 @@ export default {
     border-radius: 10px;
     margin: 2rem;
     padding: 1rem;
+    width: 40vw;
 }
 
 .product-header {
-      font-size: 2rem;
-      text-align: center;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .product-image {
-        display: block;
-        margin: 1rem auto;
+    display: block;
+    margin: 1rem auto;
 }
 
 .product-description {
-        font-size: 1.3rem;
-        margin-top: 1rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 .cart {
@@ -120,9 +122,22 @@ export default {
 }
 
 .cart-button {
-    background: lightblue;
-    border: 0;
+    background: black;
+    border: 2px solid white;
+    border-radius: 25%;
     color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.cart-button:hover {
+    background: white;
+    border: 2px solid gray;
+    border-radius: 25%;
+    color: black;
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: bold;
