@@ -10,7 +10,9 @@
         <nuxt-link to='/about'>ABOUT</nuxt-link>
         <nuxt-link to='/contact'>KONTAKT</nuxt-link>
         </li>
-        <div class="header-cart">
+        
+    </ul>
+    <div class="header-cart">
         <button @click="showCart = !showCart" class="header-button">
         <h1>C</h1>
         </button>
@@ -26,7 +28,6 @@
             </ul>
         </div>
     </div>
-    </ul>
      
   </header>
  </div>

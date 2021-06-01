@@ -1,35 +1,12 @@
 <template>
-  <div>
-
-    <section class="products">
-        <div v-for="product in products" :key="product.id" class="product">
-            <h3 class="product-header">{{ product.name }}</h3>
-            <img 
-            :key="product.img" 
-            :src="product.img" class="product-image"
-            >
-            <p class="product-description">{{ product.description }}</p>
-            <div class="cart">
-                <button
-                @click="updateCart(product, 'subtract')"
-                class="cart-button"
-                >
-                -
-                </button>
-                <span class="cart-quantity">{{ product.quantity }}</span>
-                <button
-                @click="updateCart(product, 'add')"
-                class="cart-button"
-                >
-                +
-                </button>
-            </div>
-        </div>
-    </section>
-  </div>
+    <Menu />
+    
 </template>
 
 <script>
+
+
+
 export default {
     name: "menu",
     head() {
