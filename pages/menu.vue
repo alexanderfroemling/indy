@@ -100,6 +100,10 @@ export default {
     width: 40vw;
 }
 
+img {
+    border-radius: 10px;
+}
+
 .product-header {
     font-size: 2rem;
     text-align: center;
